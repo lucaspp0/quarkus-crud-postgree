@@ -7,8 +7,8 @@ import javax.validation.constraints.NotBlank
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Null
 
-
-class AlunoDB : PanacheEntity(){
+@Entity
+class AlunoDB{
         @Null
         @Id
         var id: Int? = null
@@ -19,4 +19,7 @@ class AlunoDB : PanacheEntity(){
         var login: String= ""
         var foto: String? = null
         var CH: Float? = null
+
+
+
 }

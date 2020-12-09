@@ -6,7 +6,7 @@ import java.util.*
 import javax.persistence.*
 
 @Entity
-open class AulaDB : PanacheEntity(){
+class AulaDB{
         @Id
         var id: Int? = null
         var dataInicio: Date? = null

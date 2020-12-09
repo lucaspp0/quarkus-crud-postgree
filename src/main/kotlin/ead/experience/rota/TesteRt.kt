@@ -1,6 +1,8 @@
 package ead.experience.rota
 
+import ead.experience.repository.AlunoRepository
 import ead.experience.repository.DbTemp
+import javax.inject.Inject
 import javax.ws.rs.GET
 import javax.ws.rs.Path
 import javax.ws.rs.Produces
@@ -35,5 +37,13 @@ class TesteRt {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     fun aulas() = Response.ok().entity(DbTemp.Aulas).build()
+
+    @Path("/foda")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    fun fodadb() = Response.ok().entity(alunosRepository.findAll()).build()
+
+    @Inject
+    lateinit var alunosRepository: AlunoRepository
 
 }

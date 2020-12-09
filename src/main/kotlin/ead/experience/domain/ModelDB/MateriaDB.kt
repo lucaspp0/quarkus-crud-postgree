@@ -8,7 +8,7 @@ import javax.persistence.Id
 import javax.persistence.ManyToOne
 
 @Entity
-class MateriaDB : PanacheEntity(){
+class MateriaDB{
         @Id
         var id: Int? = null
         var nome: String? = null

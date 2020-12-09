@@ -5,7 +5,7 @@ import javax.persistence.Entity
 import javax.persistence.Id
 
 @Entity
-class ProfessorDB : PanacheEntity(){
+class ProfessorDB{
         @Id
         var id: Int? = null
         var nome: String? = null

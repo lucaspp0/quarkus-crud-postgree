@@ -6,7 +6,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity
 import javax.persistence.*
 
 @Entity
-class AlunoMateriaDB : PanacheEntity(){
+class AlunoMateriaDB{
         @Id
         @GeneratedValue
         var id: Int? = null
